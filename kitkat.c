@@ -1,20 +1,20 @@
 #include <stdio.h>
 int main()
 {
-int n, i, flag = 0;
+int v, i, f = 0;
 printf("Enter a positive integer: ");
-scanf("%d",&n);
-for(i=2; i<=n/2; ++i)
+scanf("%d",&v);
+for(i=2; i<=v/2; ++i)
 {
-if(n%i==0)
+if(v%i==0)
 {
-flag=1;
+f=1;
 break;
 }
 }
-if (flag==0)
-printf("%d is a prime number.",n);
+if (f==0)
+printf("%d is a prime number.",v);
 else
-printf("%d is not a prime number.",n);
+printf("%d is not a prime number.",v);
 return 0;
 }
